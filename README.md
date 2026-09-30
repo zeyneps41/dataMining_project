@@ -1,6 +1,6 @@
 # Bölüm 1 - Müşteri Kaybı (Churn) Analizi Projesi
 
-## 1. İş Problemi (Business Understanding)
+## 1. İş Problemi 
 Şirketlerin karlılığını etkileyen en büyük faktörlerden biri mevcut müşteriyi elde tutmaktır. Bu projedeki temel iş problemi, telekomünikasyon/hizmet sektöründeki müşterilerin rakip firmalara geçmesi (churn) nedeniyle yaşanan ciro kaybıdır. Amacımız, geçmiş müşteri davranışlarını inceleyerek ayrılma riski yüksek profilleri tespit etmek ve bu müşterilere proaktif kampanyalar sunarak elde tutma oranını artırmaktır.
 
 ## 2. Analiz Birimi ve Veri Varsayımları
@@ -9,12 +9,12 @@
   - Müşterilerin geçmiş aylardaki fatura tutarları ve şikayet/çağrı merkezi etkileşimlerinin eksiksiz kaydedildiği varsayılmıştır. 
   - Veri setindeki "Churn" etiketinin müşterinin kendi isteğiyle ayrılmasını temsil ettiği, teknik veya yasal bir zorunluluktan kaynaklanmadığı kabul edilmiştir.
 
-## 3. Hedef (Target) ve Zaman Ufku
+## 3. Hedef ve Zaman Ufku
 - **Hedef:** Bir müşterinin hizmet aboneliğini iptal edip etmeyeceğinin (Churn = 1 veya 0) öngörülmesi.
 - **Zaman Ufku:** 1 Ay (Model, müşterinin bir sonraki fatura dönemindeki kararını tahmin eder).
 
 ## 4. Başarı Metriği ve Baseline
-- **Baseline:** "Hiçbir müşteri hizmeti iptal etmez" şeklindeki en naif kural tabanlı yaklaşımdır (ZeroR).
+- **Baseline:** Kurulacak modelin başarısını ölçebilmek için başlangıç noktası olarak, 'hiçbir müşteri aboneliğini iptal etmez' diyen en temel varsayım (ZeroR) referans alındı.
 - **Başarı Metriği:** Sınıf dengesizliği (churn edenlerin azınlıkta olması) beklendiği için Accuracy (Doğruluk) yanıltıcı olacaktır. Bu nedenle, ayrılacak müşterileri kaçırmamak adına **Recall (Duyarlılık)** ve **F1-Score** metrikleri kullanılacaktır.
 
 ## 5. Görevin Yeniden Formüle Edilmesi
