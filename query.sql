@@ -1,7 +1,3 @@
--- query.sql
--- Müşteri verisi halihazırda tekilleştirilmiş (customer_id bazında) olduğu için,
--- modelleme aşamasında kullanılacak özellikleri (feature) doğrudan seçiyoruz.
-
 SELECT 
     customer_id,
     usage_score,
